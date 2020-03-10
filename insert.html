@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+	background-color: #8fe2ff;
+	color: black;
+	font-family: arial;
+	text-align: center;
+	padding: 5px;
+}
+
+nav {
+	font-family: arial;
+	line-height: 30px;
+	background-color: #eeeeee;
+	height: 300px;
+	width: 100px;
+	float: left;
+	padding: 5px;
+}
+
+section {
+	font-family: arial;
+	width: 350px;
+	float: left;
+	padding: 10px;
+}
+
+footer {
+	font-family: arial;
+	background-color: #8fe2ff;
+	color: black;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+</style>
+</head>
+
+<body>
+	<header>
+		<h1>Insert MH Weapon Data</h1>
+	</header>
+
+	<nav>
+		<a href="/webprojectCSCI4830-techExcercise-Sortino/search.html">Search
+			Data</a> <br>
+	</nav>
+
+	<section>
+		<h1>Insert Weapon</h1>
+
+		<form action="Insert" method="POST">
+
+			Weapon Type: <input list="weaponTypes"
+				name="weaponType"> <br />
+			<datalist id="weaponTypes">
+				<option value="Great Sword" />
+				<option value="Long Sword" />
+				<option value="Sword and Shield" />
+				<option value="Dual Blades" />
+				<option value="Hammer" />
+				<option value="Hunting Horn" />
+				<option value="Lance" />
+				<option value="Gunlance" />
+				<option value="Switch Axe" />
+				<option value="Insect Glaive" />
+				<option value="Charge Blade" />
+				<option value="Light Bowgun" />
+				<option value="Heavy Bowgun" />
+				<option value="Bow" />
+			</datalist>
+			Weapon Name: <input type="text" name="weaponName"> <br /> 
+			Raw Damage: <input type="text" name="rawDamage"> <br /> 
+			Special Damage Type: <input list="specialDamageTypes" name="specialDamageType"> <br /> 
+			<datalist id="specialDamageTypes">
+				<option value="None"/>
+				<option value="Fire"/>
+				<option value="Water"/>
+				<option value="Thunder"/>
+				<option value="Ice"/>
+				<option value="Dragon"/>
+				<option value="Poison"/>
+				<option value="Paralysis"/>
+				<option value="Sleep"/>
+				<option value="Blast"/>
+			</datalist>
+			Special Damage Value: <input type="text" name="specialDamageValue"> <br /> 
+			Affinity: <input type="text" name="affinity"> <br />
+			<input type="submit" value="Submit" />
+		</form>
+
+	</section>
+
+	<footer> Logan Sortino </footer>
+</body>
+</html>

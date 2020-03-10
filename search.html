@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+	background-color: #8fe2ff;
+	color: black;
+	font-family: arial;
+	text-align: center;
+	padding: 5px;
+}
+
+nav {
+	font-family: arial;
+	line-height: 30px;
+	background-color: #eeeeee;
+	height: 300px;
+	width: 100px;
+	float: left;
+	padding: 5px;
+}
+
+section {
+	font-family: arial;
+	width: 350px;
+	float: left;
+	padding: 10px;
+}
+
+footer {
+	font-family: arial;
+	background-color: #8fe2ff;
+	color: black;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+</style>
+</head>
+
+<body>
+	<header>
+		<h1>Search MH Weapon Data</h1>
+	</header>
+
+	<nav>
+		<a href="/webprojectCSCI4830-techExcercise-Sortino/insert.html">Insert
+			Data</a> <br>
+	</nav>
+
+	<section>
+		<h1>Search for Weapon</h1>
+
+		<form action="Search" method="POST">
+
+			Weapon Type: <input list="weaponTypes" name="keyword"> <br />
+			<datalist id="weaponTypes">
+				<option value="Great Sword" />
+				<option value="Long Sword" />
+				<option value="Sword and Shield" />
+				<option value="Dual Blades" />
+				<option value="Hammer" />
+				<option value="Hunting Horn" />
+				<option value="Lance" />
+				<option value="Gunlance" />
+				<option value="Switch Axe" />
+				<option value="Insect Glaive" />
+				<option value="Charge Blade" />
+				<option value="Light Bowgun" />
+				<option value="Heavy Bowgun" />
+				<option value="Bow" />
+			</datalist>
+			<input type="submit" value="Search" />
+		</form>
+
+	</section>
+
+	<footer> Logan Sortino </footer>
+</body>
+</html>
